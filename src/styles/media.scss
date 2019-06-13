@@ -1,0 +1,137 @@
+@media (max-width: 575.98px) {
+  .single-post-container {
+    padding-top: 0;
+
+    .btn-reflect {
+      margin-right: 0;
+    }
+
+    .single-post-content {
+      padding-left: 45px;
+      padding-right: 50px;
+
+      .title {
+        font-size: 32px;
+        text-align: left;
+      }
+
+      .post-image-text {
+        img {
+          margin-left: 20%;
+        }
+      }
+
+      .hash-tag-container {
+        a {
+          float: left;
+          margin-left: 0;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .footer-container {
+    padding-left: 63px;
+    padding-right: 65px;
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .footer-navigation-container {
+      margin-bottom: 23px;
+
+      ul {
+        li {
+          a {
+            font-size: 14px;
+            margin-right: 20px;
+          }
+
+          &.search {
+            display: none;
+          }
+        }
+
+        li:last-child {
+          a {
+            margin-right: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .custom-navbar {
+    button.navbar-toggler {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 54px;
+    right: -150%;
+    margin-right: -15px;
+    padding-right: 15px;
+    background-color: $primary-color-light;
+    z-index: 2;
+    width: 80%;
+    opacity: 0.99;
+  }
+
+  .navbar-collapse.collapsing {
+    height: auto;
+    -webkit-transition: right 0.3s ease;
+    -o-transition: right 0.3s ease;
+    -moz-transition: right 0.3s ease;
+    transition: right 0.3s ease;
+    right: -100%;
+
+    a {
+      text-align: right;
+      color: #ffffff;
+    }
+
+    .nav {
+      display: block;
+    }
+
+    li.navbar-search-icon {
+      display: none;
+    }
+
+    li.dropdown {
+      display: none;
+    }
+  }
+
+  .navbar-collapse.show {
+    right: 0;
+    -webkit-transition: right 0.3s ease-in;
+    -o-transition: right 0.3s ease-in;
+    -moz-transition: right 0.3s ease-in;
+    transition: right 0.3s ease-in;
+
+    a {
+      text-align: right;
+      color: #ffffff;
+    }
+
+    .nav {
+      display: block;
+    }
+
+    li.navbar-search-icon {
+      display: none;
+    }
+
+    li.dropdown {
+      display: none;
+    }
+  }
+}

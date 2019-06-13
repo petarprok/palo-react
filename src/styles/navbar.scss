@@ -1,0 +1,70 @@
+.custom-navbar {
+  padding-top: 90px;
+  padding-bottom: 80px;
+
+  .navbar-brand {
+    color: #000000;
+  }
+
+  button {
+    outline: none;
+  }
+
+  ul {
+    li {
+      a {
+        color: $navbar-link-color
+      }
+
+      &.dropdown {
+
+        div {
+          a.dropdown-item {
+            padding-left: 24px;
+          }
+
+          div.dropdown-menu {
+            right: 0;
+            left: unset;
+            margin-top: 0;
+            border-top: 0;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+
+            a {
+              padding-left: 40px;
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-search-icon {
+      margin-top: 7px;
+    }
+  }
+}
+
+.sticky {
+  background-color: $background-color;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+
+  .custom-navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+  }
+}

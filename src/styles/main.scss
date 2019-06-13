@@ -1,0 +1,13 @@
+@import "variables";
+@import "navbar";
+@import "single-post";
+@import "footer";
+@import "media";
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+.main-container {
+  background-color: $background-color;
+}
